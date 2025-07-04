@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MCQ কুইজ অ্যাপ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <h1>শিক্ষার্থী রেজিস্ট্রেশন ফর্ম</h1>
+    <form id="studentForm">
+      <input type="text" placeholder="নাম" id="name" required />
+      <input type="text" placeholder="রোল নম্বর" id="roll" required />
+      <input type="email" placeholder="ইমেইল" id="email" required />
+      <input type="tel" placeholder="মোবাইল নম্বর" id="mobile" required />
+      <button type="submit">পরীক্ষা শুরু করুন</button>
+    </form>
+
+    <div id="quizContainer" style="display:none;">
+      <h2>প্রশ্ন:</h2>
+      <div id="questionBox"></div>
+      <button id="nextBtn">পরবর্তী</button>
+    </div>
+
+    <div id="resultContainer" style="display:none;">
+      <h2>আপনার ফলাফল</h2>
+      <p id="score"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
